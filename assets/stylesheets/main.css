@@ -1,0 +1,533 @@
+/*
+  Add your scss files below to structure your project styles
+*/
+/* ==========================================================================
+   Settings
+   ========================================================================== */
+/* ==========================================================================
+   Tools (Functions, mixins etc.)
+   ========================================================================== */
+/* ==========================================================================
+   Components
+   ========================================================================== */
+.btn-primary {
+  background: #ED0D16 !important;
+  border-color: #ED0D16 !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  padding: 15px 20px !important;
+  width: 100%;
+}
+@media (min-width: 992px) and (max-width: 1398px) {
+  .btn-primary {
+    padding: 15px 10px !important;
+  }
+}
+.btn-primary:hover {
+  background: #000 !important;
+  border-color: #000 !important;
+}
+
+.btn-secondary {
+  background: #D9D9D9 !important;
+  border-color: #D9D9D9 !important;
+  border-radius: 0 !important;
+  color: #545454 !important;
+  padding: 15px 20px !important;
+  width: 100%;
+}
+@media (min-width: 992px) and (max-width: 1398px) {
+  .btn-secondary {
+    padding: 15px 10px !important;
+  }
+}
+.btn-secondary:hover {
+  background: #000 !important;
+  border-color: #000 !important;
+  color: #fff !important;
+}
+
+.slider {
+  margin-top: -50px;
+}
+.slider .main-slider {
+  overflow: hidden;
+  max-height: 486px;
+}
+@media (max-width: 1400px) {
+  .slider .main-slider {
+    max-height: 420px;
+  }
+}
+@media (max-width: 1200px) {
+  .slider .main-slider {
+    max-height: 351px;
+  }
+}
+@media (max-width: 768px) {
+  .slider .main-slider {
+    max-height: 748px;
+  }
+}
+@media (max-width: 480px) {
+  .slider .main-slider {
+    max-height: none;
+  }
+}
+.slider .main-slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-dots {
+  margin: 30px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.slick-dots li {
+  margin: 0 5px;
+}
+.slick-dots li button {
+  border: 0;
+  text-indent: -999999px;
+  background: #cecece;
+  border-radius: 50%;
+  width: 20px !important;
+  height: 20px !important;
+  padding: 0;
+  display: flex;
+}
+.slick-dots li.slick-active button {
+  background: #ED0D16;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  width: 32px;
+  height: 42px;
+  text-indent: -9999px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  opacity: 1;
+  outline: none;
+}
+
+.slick-prev {
+  left: 20px;
+  background: url(../images/icon-arrow-left.webp) no-repeat;
+}
+
+.slick-next {
+  right: 20px;
+  background: url(../images/icon-arrow-right.webp) no-repeat;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  opacity: 0.5;
+}
+
+.vehicle-others .slick-next {
+  right: 20px;
+  background: #000 url(../images/icon-arrow-right.webp) 17px 12px no-repeat;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: -50px;
+  background-size: 20px;
+}
+.vehicle-others .slick-prev {
+  left: 20px;
+  background: #000 url(../images/icon-arrow-left.webp) 13px 12px no-repeat;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: -50px;
+  background-size: 20px;
+}
+
+.vehicle-form .form-control-plaintext,
+.vehicle-form .form-select {
+  border-bottom: 1px solid #000 !important;
+}
+
+.progress {
+  height: 10px;
+}
+@media (max-width: 480px) {
+  .progress {
+    height: 5px;
+  }
+}
+.progress .progress-bar {
+  background-color: #ED0D16;
+}
+
+.steps {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.steps .step {
+  background: #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+@media (max-width: 990px) {
+  .steps .step {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+}
+.steps .step.active {
+  background: #ED0D16;
+  color: #fff;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #ED0D16;
+  box-shadow: 0 0 0 0.25rem rgba(237, 13, 22, 0.25) !important;
+}
+
+/* ==========================================================================
+   Modules
+   ========================================================================== */
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  background: #fff;
+  color: #000;
+}
+body a {
+  text-decoration: none;
+  color: #000;
+}
+body strong {
+  font-weight: 800;
+}
+
+section {
+  padding: 45px 0;
+}
+
+.primary-color {
+  color: #ED0D16 !important;
+}
+
+header {
+  box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.15);
+  padding-bottom: 50px;
+}
+header .logo img {
+  width: 100%;
+  height: auto;
+  max-width: 207px;
+}
+
+.home header {
+  padding-bottom: 0;
+}
+.home header.slider-on {
+  padding-bottom: 50px;
+}
+
+footer .entry-footer {
+  background: #212121;
+  color: #fff;
+}
+footer .entry-footer .logo img {
+  width: 100%;
+  height: auto;
+  max-width: 267px;
+}
+footer .entry-footer .logo-avatar img {
+  width: 100%;
+  height: auto;
+  max-width: 197px;
+}
+footer .entry-footer h3 {
+  font-size: 18px;
+}
+footer .entry-footer .bookmarks p {
+  font-size: 16px;
+}
+footer .entry-footer .bookmarks a {
+  color: #fff !important;
+}
+footer .entry-footer .list-links a {
+  font-size: 16px;
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.copy {
+  background: #d7d7d7;
+}
+@media (max-width: 768px) {
+  .copy .links {
+    order: 0;
+  }
+  .copy .copyright {
+    order: 2;
+  }
+  .copy .selo {
+    order: 1;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 90%;
+    margin: 15px auto;
+  }
+}
+.copy span {
+  font-size: 16px;
+  font-weight: 600;
+}
+@media (min-width: 992px) and (max-width: 1398px) {
+  .copy span {
+    font-size: 14px;
+  }
+}
+.copy .links li {
+  padding-left: 15px;
+}
+.copy .links li a {
+  font-size: 16px;
+  font-weight: 900;
+}
+@media (min-width: 992px) and (max-width: 1398px) {
+  .copy .links li a {
+    font-size: 14px;
+  }
+}
+.copy .links li::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 10px;
+  background: #000;
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .copy .links li::after {
+    display: none;
+    padding-left: 0;
+  }
+}
+.copy .links li:last-child::after {
+  display: none;
+}
+
+.titulo-page {
+  font-size: calc-rem(48px);
+}
+
+.titulo-secao h3 {
+  font-size: calc-rem(28px);
+  font-weight: 900 !important;
+}
+.titulo-secao h3 span {
+  color: #ED0D16 !important;
+}
+.titulo-secao.bar::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  background: #ED0D16;
+}
+
+.list-consorcio .categoria {
+  display: flex;
+  align-items: center;
+}
+.list-consorcio .categoria::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ED0D16;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+/*
+* HEADER PAGE
+*/
+.header-page .content {
+  margin-top: -50px;
+  background: #E9E9E9;
+}
+.header-page .content .descricao {
+  border-left: 5px solid #ED0D16;
+  margin: 15px 0;
+  padding: 15px 0 0 25px;
+}
+
+/* ==========================================================================
+   Templates
+   ========================================================================== */
+.vehicle {
+  padding: 10px;
+}
+@media (min-width: 992px) and (max-width: 1398px) {
+  .vehicle {
+    padding: 0px;
+  }
+}
+.vehicle .thumb {
+  max-height: 570px;
+  overflow: hidden;
+}
+.vehicle .thumb img {
+  width: 100%;
+  height: auto;
+}
+.vehicle .footer .label {
+  color: #ED0D16;
+  font-size: 16px;
+}
+@media (min-width: 992px) and (max-width: 1398px) {
+  .vehicle .footer .label {
+    font-size: 14px;
+  }
+}
+.vehicle .footer .valor-parcela {
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1;
+}
+@media (min-width: 992px) and (max-width: 1398px) {
+  .vehicle .footer .valor-parcela {
+    font-size: 30px;
+  }
+}
+.vehicle .footer .valor-parcela span {
+  font-size: 26px;
+}
+@media (min-width: 992px) and (max-width: 1398px) {
+  .vehicle .footer .valor-parcela span {
+    font-size: 22px;
+  }
+}
+.vehicle .footer .obs {
+  font-size: 10px;
+  margin-top: 5px;
+  display: flex;
+}
+
+.vehicle-detail {
+  margin-top: -300px;
+}
+@media (max-width: 1400px) {
+  .vehicle-detail {
+    margin-top: -400px;
+  }
+}
+@media (max-width: 1200px) {
+  .vehicle-detail {
+    margin-top: -600px;
+  }
+}
+@media (max-width: 998px) {
+  .vehicle-detail {
+    margin-top: 0;
+  }
+}
+
+.vehicle-page .detail .infos .feature {
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .vehicle-page .detail .infos .feature {
+    background: #F1F0F0;
+  }
+}
+
+.list-plans .plano .content {
+  border: 1px solid #cecece;
+}
+.list-plans .plano .content::before {
+  margin: -5px auto 0 auto;
+  content: "";
+  display: block;
+  width: 88%;
+  height: 10px;
+  background: #ED0D16;
+}
+.list-plans .plano .content span {
+  font-style: italic;
+  font-size: 18px;
+}
+.list-plans .plano .content .parcelas .item {
+  border: 2px solid transparent;
+  border-radius: 25px;
+  padding: 3px 10px 2px 10px;
+  margin-bottom: 5px;
+}
+.list-plans .plano .content .parcelas .item.active {
+  border: 2px solid #ED0D16;
+}
+.list-plans .plano .content .valores .label {
+  font-size: 16px;
+}
+.list-plans .plano .content .valores .valor {
+  font-size: 34px;
+  font-weight: 900;
+}
+.list-plans .plano .content .valores .valor span {
+  font-size: 24px;
+}
+.list-plans .plano .actions .btn {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.list-plans .plano .actions .btn-primary {
+  margin-top: -40px;
+}
+
+.form-check-input:checked {
+  background-color: #ED0D16;
+  border-color: #ED0D16;
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(237, 13, 22, 0.25) !important;
+}
+
+@media (max-width: 1400px) {
+  .form-check-label {
+    font-size: 18px;
+  }
+}
+
+.plano-detail .content {
+  border: 1px solid #ED0D16;
+}
+@media (max-width: 768px) {
+  .plano-detail .content {
+    text-align: center;
+  }
+  .plano-detail .content .detail ul,
+  .plano-detail .content .detail ol {
+    text-align: start;
+  }
+}
+
+/* ==========================================================================
+   Helpers
+   ========================================================================== *//*# sourceMappingURL=main.css.map */

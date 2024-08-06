@@ -1,0 +1,90 @@
+.vehicle {
+    padding: 10px;
+
+    @media (min-width: 992px) and (max-width: 1398px) {
+        padding: 0px;
+    }
+
+    .thumb {
+        max-height: 570px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .footer {
+        .label {
+            color: $primary-color;
+            font-size: 16px;
+
+            @media (min-width: 992px) and (max-width: 1398px) {
+                font-size: 14px;
+            }
+        }
+
+        .valor-parcela {
+            font-size: 34px;
+
+            @media (min-width: 992px) and (max-width: 1398px) {
+                font-size: 30px;
+            }
+
+            font-weight: 900;
+            line-height: 1;
+
+            span {
+                font-size: 26px;
+
+                @media (min-width: 992px) and (max-width: 1398px) {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .obs {
+            font-size: 10px;
+            margin-top: 5px;
+            display: flex;
+        }
+
+    }
+}
+
+
+.vehicle-detail {
+    margin-top: -300px;
+
+    @media (max-width: 1400px) {
+
+        margin-top: -400px;
+
+    }
+
+    @media (max-width: 1200px) {
+
+        margin-top: -600px;
+
+    }
+
+    @media (max-width: 998px) {
+        margin-top: 0;
+    }
+}
+
+
+
+.vehicle-page {
+    .detail {
+        .infos {
+            .feature {
+                font-size: 20px;
+                @media (max-width: 768px) {
+                    background: #F1F0F0;
+                }
+            }
+        }
+    }
+}

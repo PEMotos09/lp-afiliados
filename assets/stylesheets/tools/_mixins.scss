@@ -1,0 +1,15 @@
+// Make a context based selector a little more friendly
+// @param {String} $context
+@mixin when-inside($context) {
+    @if type-of($context) == map {
+        @each $selector in map-keys($context) {
+            #{map-get($context, $selector)} & {
+                @content;
+            }
+        }
+    } @else {
+        #{$context} & {
+            @content;
+        }
+    }
+}
