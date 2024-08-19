@@ -1,0 +1,71 @@
+.comecar-programa {
+    .container {
+        background: #EFEFEF;
+
+        .content {
+            padding: 0 0 0 25px;
+
+            @media (max-width: 1200px) {
+                padding: 25px 0 0 25px;
+            }
+
+            @media (max-width: 768px) {
+                padding: 45px 25px 0 25px;
+            }
+
+
+            img {
+                margin: -70px 0 0 0;
+
+                @media (max-width: 1200px) {
+                    margin: -70px 0 0 -50px;
+                }
+
+                @media (max-width: 768px) {
+                    margin: 20px auto 0 auto;
+                    display: block;
+                }
+            }
+        }
+
+        .action {
+            max-width: 220px;
+            margin: 0 auto;
+            border-left: 1px solid #000;
+            padding-left: 60px;
+            @media (max-width: 1024px) {
+                max-width: 240px;
+            }
+            @media (max-width: 768px) {
+                margin: 20px auto;
+                border-left: 0;
+                max-width: 100%;
+                padding-left: 0;
+            }
+
+            a {
+                font-size: 32px;
+                font-style: italic;
+                font-weight: 600;
+                line-height: 1 !important;
+                text-align: left !important;
+                border-radius: 5px !important;
+
+                span {
+                    font-size: 24px;
+                }
+
+                @media (max-width: 768px) {
+                    text-align: center !important;
+                    font-size: 18px;
+
+                    span {
+                        font-size: 18px;
+                    }
+                }
+
+            }
+
+        }
+    }
+}

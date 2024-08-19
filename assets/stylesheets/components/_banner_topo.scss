@@ -1,0 +1,45 @@
+#main_banner {
+
+    margin-top: -50px;
+
+    .container-banner {
+        background: $primary_color;
+
+        .content {
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: #fff;
+
+                h2 {
+                    font-size: 40px;
+
+                    span {
+                        display: block;
+                        font-weight: 900;
+                    }
+                }
+            }
+
+            .banner{
+                background: url(../images/main-banner.webp) no-repeat;
+                background-position: center;
+                background-size: cover;
+                min-height: 392px;
+            }
+            @media (max-width: 768px) {
+                display: flex;
+
+                .info {
+                    order: 1;
+                }
+
+                .banner {
+                    order: 0;
+                }
+            }
+
+        }
+    }
+}

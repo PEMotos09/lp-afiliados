@@ -1,22 +1,25 @@
-.vehicle-form {
-    .form-control-plaintext,
-    .form-select{
-        border-bottom: 1px solid #000!important;
-    }
+.form-control-plaintext,
+.form-select {
+    border-bottom: 1px solid #000 !important;
 }
 
-.progress{
+
+.progress {
     height: 10px;
+
     @media (max-width: 480px) {
         height: 5px;
     }
-    .progress-bar{
+
+    .progress-bar {
         background-color: $primary-color;
     }
 }
-.steps{
+
+.steps {
     font-family: Arial, Helvetica, sans-serif;
-    .step{
+
+    .step {
         background: #e9ecef;
         display: flex;
         justify-content: center;
@@ -24,13 +27,16 @@
         margin: 0 auto;
         width: 40px;
         height: 40px;
+
         @media (max-width: 990px) {
             width: 30px;
             height: 30px;
             font-size: 18px;
         }
+
         border-radius: 50%;
-        &.active{
+
+        &.active {
             background: $primary-color;
             color: #fff;
         }

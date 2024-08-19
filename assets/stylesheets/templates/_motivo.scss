@@ -1,0 +1,18 @@
+.motivo{
+    background: rgb(102,102,102);
+    background: linear-gradient(180deg, rgba(102,102,102,0.10407913165266103) 0%, rgba(255,255,255,0.1) 100%); 
+    .icon{
+        width: 120px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+     }
+     .number{
+        font-size: 48px;
+        strong{
+            font-weight: 900;
+        }
+     }
+}

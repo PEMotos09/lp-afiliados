@@ -1,0 +1,65 @@
+.dados {
+    .content {
+        .title {           
+            height: 400px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+    
+
+            font-size: 32px;
+            letter-spacing: -1px;
+
+            .big {
+                letter-spacing: -8px;
+                line-height: 1;
+                font-size: 92px;
+                @media (max-width: 1280px) {
+                    font-size: 72px;
+                }
+                @media (max-width:480px) {
+                    font-size: 92px;
+                }
+                font-weight: 900;
+                display: block;
+            }
+
+            .small {
+                line-height: 1;
+                display: block;
+                font-size: 64px;
+                @media (max-width: 1280px) {
+                    font-size: 44px;
+                }
+                @media (max-width: 480px) {
+                    font-size: 64px;
+                }
+                font-weight: 900;
+                letter-spacing: -2px;
+                margin-bottom: 10px;
+            }
+            &.historia{
+                background: url(../images/historia.webp) no-repeat;
+                background-size: cover;
+            }
+            &.entregues{
+                background: url(../images/entregues.webp) no-repeat;
+                background-size: cover;
+            }
+            &.pontos{
+                background: url(../images/pontos.webp) no-repeat;
+                background-size: cover;
+            }
+            &.colaboradores{
+                background: url(../images/colaboradores.webp) no-repeat;
+                background-size: cover;
+            }
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

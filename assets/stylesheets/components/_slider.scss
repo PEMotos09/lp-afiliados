@@ -1,6 +1,5 @@
 .slider {
     margin-top: -50px;
-
     .main-slider {
         overflow: hidden;
         max-height: 486px;
@@ -20,6 +19,7 @@
         @media (max-width: 480px) {
             max-height: none;
         }
+
         img {
             width: 100%;
             height: auto;

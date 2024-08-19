@@ -37,62 +37,15 @@ $(document).ready(function () {
 
 
 
-  $('.list-others').slick({
+  $('.depoimentos-list').slick({
     autoplay: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    lazyLoad: 'ondemand',
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          dots: true,
-          arrows: false,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          dots: true,
-          arrows: false,
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-  });
-
-
-
-  $('.list-plans').slick({
-    autoplay: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     lazyLoad: 'ondemand',
     dots: true,
     arrows: false,
-    responsive: [
-      {
-        breakpoint: 990,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          adaptiveHeight: true
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
   });
+
 
 
   $('.date').mask('00/00/0000');

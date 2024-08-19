@@ -23,6 +23,7 @@
    ========================================================================== */
 
 @import "components/botoes";
+@import "components/banner_topo";
 @import "components/slider";
 @import "components/forms";
 
@@ -39,8 +40,14 @@
    Templates
    ========================================================================== */
 
-@import "templates/vehicle";
-@import "templates/plano";
+//@import "templates/vehicle";
+//@import "templates/plano";
+@import "templates/programa";
+@import "templates/comecar_programa";
+@import "templates/dados";
+@import "templates/motivo";
+@import "templates/faq";
+@import "templates/depoimentos";
 
 /* ==========================================================================
    Helpers

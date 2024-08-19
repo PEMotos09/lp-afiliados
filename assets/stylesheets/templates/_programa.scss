@@ -1,0 +1,22 @@
+#programa{
+    padding: 65px 0;
+    @media (min-width: 1024px) {
+        padding: 65px 7%;
+    }
+    text-align: center;
+    .icon{
+        width: 172px;
+        height: 172px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border:5px solid $primary-color;
+        margin: 0 auto 25px auto;
+     }
+     .list-programa{
+        .h3{
+            font-size: 1.5rem!important;
+        }
+     }
+}
