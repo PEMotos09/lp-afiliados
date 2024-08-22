@@ -606,19 +606,19 @@ h2, .h2 h3,
   }
 }
 .dados .content .title.historia {
-  background: url(../images/historia.webp) no-repeat;
+  background: url(../images/historia.webp?v1) no-repeat;
   background-size: cover;
 }
 .dados .content .title.entregues {
-  background: url(../images/entregues.webp) no-repeat;
+  background: url(../images/entregues.webp?v1) no-repeat;
   background-size: cover;
 }
 .dados .content .title.pontos {
-  background: url(../images/pontos.webp) no-repeat;
+  background: url(../images/pontos.webp?v1) no-repeat;
   background-size: cover;
 }
 .dados .content .title.colaboradores {
-  background: url(../images/colaboradores.webp) no-repeat;
+  background: url(../images/colaboradores.webp?v1) no-repeat;
   background-size: cover;
 }
 .dados .content img {
